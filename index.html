@@ -9,88 +9,125 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div class="container">
+    <div class="main">
       <header id="header">
-        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="" id="header-img">
+        <div class="logo">
+                    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt=""
+                      id="header-img">
+        </div>
+
         <nav id="nav-bar">
           <ul>
-            <li class="nav-link">Features</li>
-            <li class="nav-link">How It Works</li>
-            <li class="nav-link">Pricing</li>
+            <li class="nav-link"><a href="#features">Features</a> </li>
+            <li class="nav-link"><a href="#how-it-works"></a> How It Works</li>
+            <li class="nav-link"><a href="#pricing"></a> Pricing</li>
           </ul>
         </nav>
       </header>
-      <div class="main">
-                <div class="search">
+      <div class="contain">
+          <div class="search" id="hero">
                   <h2>Handcrafted, home-made masterpieces</h2>
                   <form action="" id="form">
                     <input type="email" id="email" placeholder="Enter your email address">
-                    <button id="submit">GET STARTED</button>
+                    <input type="submit" id="submit" value="GET STARTED">
                   </form>
-                </div>
-                <div class="icons">
+            </div>
+                <div class="icons" id="features">
                   <div class="list">
-                    <i class="fa-solid fa-fire-flame-curved"></i>
-                    <h3>Premium Materials</h3>
+                    <div class="icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                    <div class="desc">
+                                            <h3>Premium Materials</h3>
                     <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
                     </p>
+                    </div>
+
                   </div>
                   <div class="list">
-                    <i class="fa-sharp fa-solid fa-truck"></i>
+                    <div class="icon">
+              <i class="fa-sharp fa-solid fa-truck"></i>
+                    </div>
+                   <div class="desc">
                     <h3>Fast Shipping</h3>
                     <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you
                       are
                       not satisfied.</p>
+                   </div>
+
                   </div>
                   <div class="list">
-                    <i class="fa-solid fa-battery-full"></i>
+                    <div class="icon">
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                 <div class="desc">
                     <h3>Quality Assurance</h3>
                     <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch
                       of your
                       instrument.</p>
+                 </div>
+
                   </div>
                 </div>
-                <div class="video">
+                <div class="video" id="how-it-works">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
                     title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
                 </div>
-                <div class="cards">
+                <div class="cards" id="pricing">
                   <div class="card">
-                    <h3>TENOR TROMBONE</h3>
-                    <h5>$600</h5>
-                    <p>Lorem ipsum.
-                    Lorem ipsum.
-                    Lorem ipsum dolor.
-                    Lorem ipsum.</p>
+                    <div class="level">
+                      <h3>TENOR TROMBONE</h3>
+                    </div>
+                    
+                    <h2>$600</h2>
+                      <ol>
+                      <li>Lorem ipsum.</li>
+                      <li>Lorem ipsum.</li>
+                      <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
                     <button class="btn">SELECT</button>
                   </div>
                   <div class="card">
-                 <h3>TENOR TROMBONE</h3>
-                 <h5>$900</h5>
-                <p>Lorem ipsum.Lorem ipsum.Lorem ipsum dolor. Lorem ipsum.</p>
-  <button class="btn">SELECT</button>
+                    <div class="level">
+                          <h3>TENOR TROMBONE</h3>
+                    </div>
+                 <h2>$900</h2>
+                      <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum.</li>
+                      </ol>
+              <button class="btn">SELECT</button>
                   </div>
                   <div class="card">
-<h3>TENOR TROMBONE</h3>
-<h5>$1200</h5>
-<p>Lorem ipsum.Lorem ipsum. Lorem ipsum dolor.Lorem ipsum.</p>
+                    <div class="level">
+                        <h3>TENOR TROMBONE</h3>
+                    </div>
+
+                  <h2>$1200</h2>
+                      <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum.</li>
+                      </ol>
                               <button class="btn">SELECT</button>
                   </div>
                 </div>
       </div>
+
+    </div>
+
       <footer class="footer">
         <ul>
-          <li>Privacy</li>
-          <li>Terms</li>
-          <li>Contact</li>
+          <li><a href="#">Privacy</a> </li>
+          <li><a href="#">Terms</a> </li>
+          <li><a href="#">Contact</a> </li>
         </ul>
         <p>Copyright 2016, Original Trombones</p>
       </footer>
-    </div>
-
-
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
   </body>
